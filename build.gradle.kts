@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "me.davidml16"
-version = "2.5.1"
+version = "2.5.2"
 description = "ACubelets"
 
 repositories {

@@ -295,8 +295,7 @@ public class CubeletRewardHandler {
                         .clone());
             else if (target.getInventory()
                 .firstEmpty() >= 0)
-                target.getInventory()
-                    .addItem(itemObject.getItemStack());
+                target.getInventory().addItem(itemObject.getItemStack().clone());
             else target.getLocation()
                     .getWorld()
                     .dropItemNaturally(target.getLocation(), itemObject.getItemStack()

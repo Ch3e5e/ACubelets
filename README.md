@@ -51,3 +51,5 @@ cd <project_root_directory>
 mvn package
 ```
 Find compiled jar in `target` directory
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/IDavidML/ACubelets)

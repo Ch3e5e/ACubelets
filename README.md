@@ -45,11 +45,18 @@ Examples of conventional commit prefixes: feat, fix, chore, docs, refactor, test
 ###### Thanks for supporting ❤️
 
 #### Compiling
-###### Use maven to compile a jar
+###### Use gradle to compile a jar
+> Linux / MacOS
 ```bash
 cd <project_root_directory>
-mvn package
+chmod +x ./gradlew
+./gradlew build
 ```
-Find compiled jar in `target` directory
+> Windows
+```powershell
+cd <project_root_directory>
+.\gradlew.bat build
+```
+Find the compiled jar in `build/libs` directory
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/IDavidML/ACubelets)

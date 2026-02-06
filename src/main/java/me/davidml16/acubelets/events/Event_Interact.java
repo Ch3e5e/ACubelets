@@ -38,14 +38,14 @@ public class Event_Interact implements Listener {
 
 		if (action == Action.RIGHT_CLICK_AIR || action == Action.LEFT_CLICK_AIR || action == Action.RIGHT_CLICK_BLOCK || action == Action.LEFT_CLICK_BLOCK) {
 
-			if (item != null) {
+			if (item != null && !item.getType().isAir()) {
 
 				if (NBTEditor.contains(item, NBTEditor.CUSTOM_DATA, "keyType")) e.setCancelled(true);
 			}
 
 		}
 
-		if (item == null || !NBTEditor.contains(item, NBTEditor.CUSTOM_DATA, "keyType") || !main.isSetting("UseKeys")) {
+		if (item == null || item.getType().isAir() || !NBTEditor.contains(item, NBTEditor.CUSTOM_DATA, "keyType") || !main.isSetting("UseKeys")) {
 
 			if (main.getCubeletBoxHandler().isClickType(action)) {
 
